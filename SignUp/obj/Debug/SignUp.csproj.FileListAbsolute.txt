@@ -1,0 +1,14 @@
+C:\Users\richa\Documents\HealthRecord\SignUp\bin\Debug\SignUp.exe.config
+C:\Users\richa\Documents\HealthRecord\SignUp\bin\Debug\SignUp.exe
+C:\Users\richa\Documents\HealthRecord\SignUp\bin\Debug\SignUp.pdb
+C:\Users\richa\Documents\HealthRecord\SignUp\obj\Debug\SignUp.csprojAssemblyReference.cache
+C:\Users\richa\Documents\HealthRecord\SignUp\obj\Debug\App.g.cs
+C:\Users\richa\Documents\HealthRecord\SignUp\obj\Debug\SignUp_MarkupCompile.cache
+C:\Users\richa\Documents\HealthRecord\SignUp\obj\Debug\SignUp_MarkupCompile.lref
+C:\Users\richa\Documents\HealthRecord\SignUp\obj\Debug\SignUp.g.resources
+C:\Users\richa\Documents\HealthRecord\SignUp\obj\Debug\SignUp.Properties.Resources.resources
+C:\Users\richa\Documents\HealthRecord\SignUp\obj\Debug\SignUp.csproj.GenerateResource.cache
+C:\Users\richa\Documents\HealthRecord\SignUp\obj\Debug\SignUp.exe
+C:\Users\richa\Documents\HealthRecord\SignUp\obj\Debug\SignUp.pdb
+C:\Users\richa\Documents\HealthRecord\SignUp\obj\Debug\MainWindow.g.cs
+C:\Users\richa\Documents\HealthRecord\SignUp\obj\Debug\MainWindow.baml
