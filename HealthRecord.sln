@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Login", "Login\Login.csproj", "{747EA82A-EF44-4A12-A7E8-B6ED10039FD6}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignUp", "SignUp\SignUp.csproj", "{8727C480-C8B3-4E21-848E-BAD0AF09B935}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrescriptionMaker", "PrescriptionMaker\PrescriptionMaker.csproj", "{B19C1A38-7051-49CF-BC04-704D1B36A9CD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatientList", "PatientList\PatientList.csproj", "{53F2A783-18BA-4C06-B79D-2CD883B741CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedicationList", "MedicationList\MedicationList.csproj", "{8EF11D73-AE53-4C54-B017-A65490C27AD7}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookAppointment", "BookAppointment\BookAppointment.csproj", "{E6F966AF-8694-431B-80D1-1CDB7BD9C1A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Medications", "Medications\Medications.csproj", "{BB0CE9E3-2D0F-40E3-A989-F1834BCF0A47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Login", "Login\Login.csproj", "{56FD1558-C458-4C29-B0A3-6009AC389DB7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +21,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{747EA82A-EF44-4A12-A7E8-B6ED10039FD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{747EA82A-EF44-4A12-A7E8-B6ED10039FD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{747EA82A-EF44-4A12-A7E8-B6ED10039FD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{747EA82A-EF44-4A12-A7E8-B6ED10039FD6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8727C480-C8B3-4E21-848E-BAD0AF09B935}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8727C480-C8B3-4E21-848E-BAD0AF09B935}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8727C480-C8B3-4E21-848E-BAD0AF09B935}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -37,14 +33,18 @@ Global
 		{53F2A783-18BA-4C06-B79D-2CD883B741CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53F2A783-18BA-4C06-B79D-2CD883B741CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53F2A783-18BA-4C06-B79D-2CD883B741CC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8EF11D73-AE53-4C54-B017-A65490C27AD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8EF11D73-AE53-4C54-B017-A65490C27AD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8EF11D73-AE53-4C54-B017-A65490C27AD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8EF11D73-AE53-4C54-B017-A65490C27AD7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E6F966AF-8694-431B-80D1-1CDB7BD9C1A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E6F966AF-8694-431B-80D1-1CDB7BD9C1A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6F966AF-8694-431B-80D1-1CDB7BD9C1A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6F966AF-8694-431B-80D1-1CDB7BD9C1A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB0CE9E3-2D0F-40E3-A989-F1834BCF0A47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB0CE9E3-2D0F-40E3-A989-F1834BCF0A47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB0CE9E3-2D0F-40E3-A989-F1834BCF0A47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB0CE9E3-2D0F-40E3-A989-F1834BCF0A47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56FD1558-C458-4C29-B0A3-6009AC389DB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56FD1558-C458-4C29-B0A3-6009AC389DB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56FD1558-C458-4C29-B0A3-6009AC389DB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56FD1558-C458-4C29-B0A3-6009AC389DB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
