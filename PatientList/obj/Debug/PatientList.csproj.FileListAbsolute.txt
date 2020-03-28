@@ -1,0 +1,14 @@
+C:\Users\Egeh\Desktop\COMP231\PatientList\bin\Debug\PatientList.exe.config
+C:\Users\Egeh\Desktop\COMP231\PatientList\bin\Debug\PatientList.exe
+C:\Users\Egeh\Desktop\COMP231\PatientList\bin\Debug\PatientList.pdb
+C:\Users\Egeh\Desktop\COMP231\PatientList\obj\Debug\PatientList.csprojAssemblyReference.cache
+C:\Users\Egeh\Desktop\COMP231\PatientList\obj\Debug\MainWindow.g.cs
+C:\Users\Egeh\Desktop\COMP231\PatientList\obj\Debug\App.g.cs
+C:\Users\Egeh\Desktop\COMP231\PatientList\obj\Debug\PatientList_MarkupCompile.cache
+C:\Users\Egeh\Desktop\COMP231\PatientList\obj\Debug\PatientList_MarkupCompile.lref
+C:\Users\Egeh\Desktop\COMP231\PatientList\obj\Debug\MainWindow.baml
+C:\Users\Egeh\Desktop\COMP231\PatientList\obj\Debug\PatientList.g.resources
+C:\Users\Egeh\Desktop\COMP231\PatientList\obj\Debug\PatientList.Properties.Resources.resources
+C:\Users\Egeh\Desktop\COMP231\PatientList\obj\Debug\PatientList.csproj.GenerateResource.cache
+C:\Users\Egeh\Desktop\COMP231\PatientList\obj\Debug\PatientList.exe
+C:\Users\Egeh\Desktop\COMP231\PatientList\obj\Debug\PatientList.pdb

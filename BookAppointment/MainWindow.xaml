@@ -5,8 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BookAppointment"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="400">
+        Title="MainWindow" Height="620" Width="1000">
     <Grid>
-        
+        <Image Source="default-avatar.png" x:Name="userAvatar"  HorizontalAlignment="Left" Height="160" Margin="40,40,0,0" VerticalAlignment="Top" Width="160"/>
+        <Grid Margin="359,68,151,29">
+            <StackPanel Margin="0,0,240,0">
+                <Button x:Name="nineToHalf_Btn" Content="9:00 - 9:30" Height="59" Click="nineToHalf_Btn_Clicked"/>
+                <Button x:Name="tenToHalf_Btn" Content="10:00 - 10:30" Height="59" Click="tenToHalf_Btn_Clicked"/>
+                <Button x:Name="elevenToHalf_Btn" Content="11:00 - 11:30" Height="59" Click="elevenToHalf_Btn_Clicked"/>
+                <Button x:Name="oneToHalf_Btn" Content="1:00 - 1:30" Height="59" Click="oneToHalf_Btn_Clicked"/>
+                <Button x:Name="twoToHalf_Btn" Content="2:00 - 2:30" Height="59" Click="twoToHalf_Btn_Clicked"/>
+                <Button x:Name="threeToHalf_Btn" Content="3:00 - 3:30" Height="59" Click="threeToHalf_Btn_Clicked"/>
+                <Button x:Name="fourToHalf_Btn" Content="4:00 - 4:30" Height="59" Click="fourToHalf_Btn_Clicked"/>
+                <Button x:Name="fiveToHalf_Btn" Content="5:00 - 5:30" Height="59" Click="fiveToHalf_Btn_Clicked"/>
+            </StackPanel>
+            <StackPanel Margin="240,0,0,0">
+                <Button x:Name="halfToTen_Btn" Content="9:30 - 10:00" Height="59" Click="halfToTen_Btn_Clicked"/>
+                <Button x:Name="halfToEleven_Btn" Content="10:30 - 11:00" Height="59" Click="halfToEleven_Btn_Clicked"/>
+                <Button x:Name="halfToTwelve_Btn" Content="11:30 - 12:00" Height="59" Click="halfToTwelve_Btn_Clicked"/>
+                <Button x:Name="halfToTwo_Btn" Content="1:30 - 2:00" Height="59" Click="halfToTwo_Btn_Clicked"/>
+                <Button x:Name="halfToThree_Btn" Content="2:30 - 3:00" Height="59" Click="halfToThree_Btn_Clicked"/>
+                <Button x:Name="halfToFour_Btn" Content="3:30 - 4:00" Height="59" Click="halfToFour_Btn_Clicked"/>
+                <Button x:Name="halfToFive_Btn" Content="4:30 - 5:00" Height="59" Click="halfToFive_Btn_Clicked"/>
+                <Button x:Name="halfToSix_Btn" Content="5:30 - 6:00" Height="59" Click="halfToSix_Btn_Clicked"/>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Window>

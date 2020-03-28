@@ -1,0 +1,14 @@
+C:\Users\Egeh\Desktop\COMP231\PrescriptionMaker\bin\Debug\PrescriptionMaker.exe.config
+C:\Users\Egeh\Desktop\COMP231\PrescriptionMaker\bin\Debug\PrescriptionMaker.exe
+C:\Users\Egeh\Desktop\COMP231\PrescriptionMaker\bin\Debug\PrescriptionMaker.pdb
+C:\Users\Egeh\Desktop\COMP231\PrescriptionMaker\obj\Debug\PrescriptionMaker.csprojAssemblyReference.cache
+C:\Users\Egeh\Desktop\COMP231\PrescriptionMaker\obj\Debug\MainWindow.g.cs
+C:\Users\Egeh\Desktop\COMP231\PrescriptionMaker\obj\Debug\App.g.cs
+C:\Users\Egeh\Desktop\COMP231\PrescriptionMaker\obj\Debug\PrescriptionMaker_MarkupCompile.cache
+C:\Users\Egeh\Desktop\COMP231\PrescriptionMaker\obj\Debug\PrescriptionMaker_MarkupCompile.lref
+C:\Users\Egeh\Desktop\COMP231\PrescriptionMaker\obj\Debug\MainWindow.baml
+C:\Users\Egeh\Desktop\COMP231\PrescriptionMaker\obj\Debug\PrescriptionMaker.g.resources
+C:\Users\Egeh\Desktop\COMP231\PrescriptionMaker\obj\Debug\PrescriptionMaker.Properties.Resources.resources
+C:\Users\Egeh\Desktop\COMP231\PrescriptionMaker\obj\Debug\PrescriptionMaker.csproj.GenerateResource.cache
+C:\Users\Egeh\Desktop\COMP231\PrescriptionMaker\obj\Debug\PrescriptionMaker.exe
+C:\Users\Egeh\Desktop\COMP231\PrescriptionMaker\obj\Debug\PrescriptionMaker.pdb

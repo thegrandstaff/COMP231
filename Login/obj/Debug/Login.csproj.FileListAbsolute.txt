@@ -1,0 +1,14 @@
+C:\Users\Egeh\Desktop\COMP231\Login\bin\Debug\Login.exe.config
+C:\Users\Egeh\Desktop\COMP231\Login\bin\Debug\Login.exe
+C:\Users\Egeh\Desktop\COMP231\Login\bin\Debug\Login.pdb
+C:\Users\Egeh\Desktop\COMP231\Login\obj\Debug\Login.csprojAssemblyReference.cache
+C:\Users\Egeh\Desktop\COMP231\Login\obj\Debug\MainWindow.g.cs
+C:\Users\Egeh\Desktop\COMP231\Login\obj\Debug\App.g.cs
+C:\Users\Egeh\Desktop\COMP231\Login\obj\Debug\Login_MarkupCompile.cache
+C:\Users\Egeh\Desktop\COMP231\Login\obj\Debug\Login_MarkupCompile.lref
+C:\Users\Egeh\Desktop\COMP231\Login\obj\Debug\MainWindow.baml
+C:\Users\Egeh\Desktop\COMP231\Login\obj\Debug\Login.g.resources
+C:\Users\Egeh\Desktop\COMP231\Login\obj\Debug\Login.Properties.Resources.resources
+C:\Users\Egeh\Desktop\COMP231\Login\obj\Debug\Login.csproj.GenerateResource.cache
+C:\Users\Egeh\Desktop\COMP231\Login\obj\Debug\Login.exe
+C:\Users\Egeh\Desktop\COMP231\Login\obj\Debug\Login.pdb

@@ -15,6 +15,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedicationList", "Medicatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookAppointment", "BookAppointment\BookAppointment.csproj", "{E6F966AF-8694-431B-80D1-1CDB7BD9C1A9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{0B084915-28EE-4F38-B974-1D64B65C40EF}"
+	ProjectSection(SolutionItems) = preProject
+		..\default-avatar.png = ..\default-avatar.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
