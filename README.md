@@ -5,11 +5,11 @@ HealthRecord
 * [HealthRecord](#HealthRecord)
 * [Technologies](#technologies)
 * [Login](#login)
-* [SignUp](#sign-up)
-* [PatientList](#patient-list)
-* [PrescriptionMaker](#prescription-maker)
-* [BookAppointment](#book-appointment)
-* [MedicationList](#medication-list)
+* [SignUp](#signup)
+* [PatientList](#patientlist)
+* [PrescriptionMaker](#prescriptionmaker)
+* [BookAppointment](#bookappointment)
+* [MedicationList](#medicationlist)
 
 ## HealthRecord
 This is a college group project using WPF. It saves patient information, list of their prescription medication and books appointments.
@@ -40,3 +40,21 @@ Regex expressions are used to validate whether or not email addresses or phone n
 Password needs to be at least 10 characters. A prompt to change it will appear when the password does not meet the condition. Confirm password input needs to match the password entered.
 
 When all fields are correctly entered, a Patient object should be created with all the above information as properties.
+
+## PatientList
+This is the patient list window. It uses a datagrid to dynamically display all the patients when the repository gets updated.
+
+While each Patient object has a first name, last name, etc..., only the first name, last name, phone number and address will be displayed for each patient on the datagrid. 
+
+Seed data is created for testing purposes to show that new Patient objects are being created and are then added to the ListOfPatients list. This new list will be used as the ItemSource for the datagrid.
+
+Since it is a datagrid, patients can be organized on the datagrid by their property (e.g. first name or last name).
+
+## PrescriptionMaker
+This is the window where prescriptions can be added to patients. An ObservableCollection (for patients) is used to allow different data types to be used for each object (e.g. int for dosage amounts, Date for expiration dates, etc...).
+
+## MedicationList
+This is a window to display medication for a specific patient. Clicking patients on the datagrid can be used to open a new window. A unique ID for each patient can be used as a primary key to relate the data on the ListOfPatients with the information on the MedicationList or, for now, their phone numbers or email address.
+
+## BookAppointment
+This is the window where a patient can book an appointment for a specific time slot that is available for the day.
