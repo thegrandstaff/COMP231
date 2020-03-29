@@ -26,3 +26,11 @@ C:\Users\jasah\OneDrive\Desktop\WPF Apps\COMP231\SignUp\obj\Debug\SignUp.Propert
 C:\Users\jasah\OneDrive\Desktop\WPF Apps\COMP231\SignUp\obj\Debug\SignUp.csproj.GenerateResource.cache
 C:\Users\jasah\OneDrive\Desktop\WPF Apps\COMP231\SignUp\obj\Debug\SignUp.exe
 C:\Users\jasah\OneDrive\Desktop\WPF Apps\COMP231\SignUp\obj\Debug\SignUp.pdb
+C:\Users\jasah\OneDrive\Desktop\COMP 231Project\COMP231\SignUp\obj\Debug\SignUp.csprojAssemblyReference.cache
+C:\Users\jasah\OneDrive\Desktop\COMP 231Project\COMP231\SignUp\obj\Debug\MainWindow.g.cs
+C:\Users\jasah\OneDrive\Desktop\COMP 231Project\COMP231\SignUp\obj\Debug\App.g.cs
+C:\Users\jasah\OneDrive\Desktop\COMP 231Project\COMP231\SignUp\obj\Debug\SignUp_Content.g.cs
+C:\Users\jasah\OneDrive\Desktop\COMP 231Project\COMP231\SignUp\obj\Debug\SignUp_MarkupCompile.cache
+C:\Users\jasah\OneDrive\Desktop\COMP 231Project\COMP231\SignUp\obj\Debug\SignUp_MarkupCompile.lref
+C:\Users\jasah\OneDrive\Desktop\COMP 231Project\COMP231\SignUp\obj\Debug\SignUp.exe
+C:\Users\jasah\OneDrive\Desktop\COMP 231Project\COMP231\SignUp\obj\Debug\SignUp.pdb

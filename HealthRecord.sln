@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookAppointment", "BookAppo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Medications", "Medications\Medications.csproj", "{BB0CE9E3-2D0F-40E3-A989-F1834BCF0A47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Login", "Login\Login.csproj", "{56FD1558-C458-4C29-B0A3-6009AC389DB7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Login", "Login\Login.csproj", "{CEA4B6C2-E4ED-4D81-968B-63EA585076DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +41,8 @@ Global
 		{BB0CE9E3-2D0F-40E3-A989-F1834BCF0A47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB0CE9E3-2D0F-40E3-A989-F1834BCF0A47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB0CE9E3-2D0F-40E3-A989-F1834BCF0A47}.Release|Any CPU.Build.0 = Release|Any CPU
-		{56FD1558-C458-4C29-B0A3-6009AC389DB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{56FD1558-C458-4C29-B0A3-6009AC389DB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{56FD1558-C458-4C29-B0A3-6009AC389DB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{56FD1558-C458-4C29-B0A3-6009AC389DB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEA4B6C2-E4ED-4D81-968B-63EA585076DA}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{CEA4B6C2-E4ED-4D81-968B-63EA585076DA}.Release|Any CPU.ActiveCfg = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

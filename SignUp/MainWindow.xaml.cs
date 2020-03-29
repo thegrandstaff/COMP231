@@ -14,6 +14,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using System.Data.SQLite;
+
 namespace SignUp
 {
     /// <summary>
@@ -23,6 +25,7 @@ namespace SignUp
     {
         public MainWindow()
         {
+            string dbConnectionString = @"Data Source=mydb.db;Version=3;";
             InitializeComponent();
 
             //navigation bar (combobox)
