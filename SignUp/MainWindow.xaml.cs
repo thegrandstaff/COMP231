@@ -36,14 +36,16 @@ namespace SignUp
         // which can be used to add medications dosages (int, double) and expiration dates (Date)
         ObservableCollection<Account> Accounts = new ObservableCollection<Account>();
 
-        // method checks for valid email - returns boolean
+        // method checks for valid email
+        // must follow the standard "example@email.com" domain 
         public static bool IsValidEmail(string email)
         {
             //regex expression for "email addresses"
             return Regex.Match(email, @"^[\w!#$%&'*+\-/=?\^_`{|}~]+(\.[\w!#$%&'*+\-/=?\^_`{|}~]+)*" + "@" + @"((([\-\w]+\.)+[a-zA-Z]{2,4})|(([0-9]{1,3}\.){3}[0-9]{1,3}))$").Success;
         }
 
-        //method for checking if phone number is valid 
+        // method for checking if phone number is valid 
+        // must have an area code and 7 numbers afterwards (e.g. "1-416-xxx-xxxx", "647-9007000", etc... are acceptable)
         public static bool IsValidNumber(string number)
         {
             //regex expression for "phone numbers"
