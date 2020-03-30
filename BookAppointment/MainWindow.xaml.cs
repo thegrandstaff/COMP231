@@ -25,6 +25,8 @@ namespace BookAppointment
             InitializeComponent();
         }
 
+        //The following methods are tied to each time slot and what they do is present a confirmation box to the user
+        //If the user confirms the appointment time, the time slot is then taken by the user
         private void nineToHalf_Btn_Clicked(object sender, RoutedEventArgs e)
         {
             if (MessageBox.Show("Create appointment for 9:00 to 9:30?",
