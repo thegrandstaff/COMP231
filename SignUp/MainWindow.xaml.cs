@@ -31,6 +31,9 @@ namespace SignUp
             signupNav.Items.Add("Patients List");
         }
 
+        // creation of the Account collection
+        // ObservableCollections use any data types
+        // which can be used to add medications dosages (int, double) and expiration dates (Date)
         ObservableCollection<Account> Accounts = new ObservableCollection<Account>();
 
         // method checks for valid email - returns boolean
