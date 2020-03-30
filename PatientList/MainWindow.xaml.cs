@@ -123,19 +123,18 @@ namespace PatientList
                 File.WriteLine(""); // extra space
             }
 
-            // this line is needed to close the file -> finish writing
+            // close the file -> finish writing the text file
             File.Close();
 
             // window output
             MessageBox.Show("Patient List saved.");
         }
 
-        // event not used, but it is used when a patient object is selected in the datagrid
+        // automatically generated method
+        // event not currently in use, but it is used when a patient object is selected in the datagrid
         private void dg_patients_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
         }
-
-
 
     }
 }
