@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -29,22 +31,25 @@ namespace SignUp
             signupNav.Items.Add("Patients List");
         }
 
-        
+        ObservableCollection<Account> Accounts = new ObservableCollection<Account>();
 
         // method checks for valid email - returns boolean
         public static bool IsValidEmail(string email)
         {
+            //regex expression for "email addresses"
             return Regex.Match(email, @"^[\w!#$%&'*+\-/=?\^_`{|}~]+(\.[\w!#$%&'*+\-/=?\^_`{|}~]+)*" + "@" + @"((([\-\w]+\.)+[a-zA-Z]{2,4})|(([0-9]{1,3}\.){3}[0-9]{1,3}))$").Success;
         }
 
         //method for checking if phone number is valid 
         public static bool IsValidNumber(string number)
         {
+            //regex expression for "phone numbers"
             return Regex.Match(number, @"((?:\(?[2-9](?(?=1)1[02-9]|(?(?=0)0[1-9]|\d{2}))\)?\D{0,3})(?:\(?[2-9](?(?=1)1[02-9]|\d{2})\)?\D{0,3})\d{4})").Success;
         }
 
         private void signup_Btn_Click(object sender, RoutedEventArgs e)
         {
+            //set of prompts for input - incorrect or missing information
             if (firstName_Txt.Text == "")
             {
                 MessageBox.Show("Please, enter your first name.");
@@ -86,25 +91,70 @@ namespace SignUp
             {
                 MessageBox.Show("Please, confirm your password in the 'Confirm Password' box.");
             }
-            else
-            {
-                Patient patient = new Patient();
-            }
-
-
-            
-
-            
-
-
-
             // checks if the password matches the input for "confirm password"
-            if (password_box.Password != confirmPassword_box.Password && 
-                password_box.Password != "" && 
+            else if (password_box.Password != confirmPassword_box.Password &&
+                password_box.Password != "" &&
                 confirmPassword_box.Password != "")
             {
                 MessageBox.Show("Passwords entered do not match.");
                 confirmPassword_box.Password = "";
+            }
+            else
+            {
+                //if all information is filled properly, an account object will be created
+
+                //create new account object with user input
+                Accounts.Add(new Account
+                {   
+                    FirstName = firstName_Txt.ToString(), 
+                    LastName = lastName_Txt.ToString(), 
+                    Email = emailAddress_Txt.ToString(), 
+                    Phone = phoneNumber_Txt.ToString(), 
+                    Address = streetAddress_Txt.ToString(), 
+                    Password = password_box.Password 
+                });
+                
+                //create "account name" which is the first letter (lowercase) for the first name and the last name
+                string firstName = firstName_Txt.Text.ToLower();
+                string lastName = lastName_Txt.Text;
+
+                //creating the substring for the first name
+                string firstNameSubString = firstName.Substring(0,1);
+
+                //creating the actual account name
+                string accountName = firstNameSubString + lastName;
+
+                //creates a text file called "accountInfo.txt"
+                StreamWriter File = new StreamWriter("accountInfo.txt");
+
+                //prints account information into the text file
+                File.WriteLine("Account:    " + accountName);
+                File.WriteLine("First Name: " + firstName_Txt.Text);
+                File.WriteLine("Last Name:  " + lastName_Txt.Text);
+                File.WriteLine("Address:    " + streetAddress_Txt.Text);
+                File.WriteLine("Phone No.:  " + phoneNumber_Txt.Text);
+                File.WriteLine("Email:      " + emailAddress_Txt.Text);
+                File.WriteLine("Password:   " + password_box.Password);
+
+                // this line is needed to close the file -> finish writing
+                // information is now in a text file located in the project files
+                // SignUp folder -> bin -> Debug -> txt.file
+                File.Close();
+
+                // output message - shows new account name
+                MessageBox.Show("Account " + accountName + " created.");
+
+                // window output - tells user that information is saved
+                MessageBox.Show("Account information saved.");
+
+                //clears all
+                firstName_Txt.Clear();
+                lastName_Txt.Clear();
+                emailAddress_Txt.Clear();
+                phoneNumber_Txt.Clear();
+                streetAddress_Txt.Clear();
+                password_box.Clear();
+                confirmPassword_box.Clear();
             }
         }
 
@@ -120,72 +170,17 @@ namespace SignUp
             confirmPassword_box.Clear();
         }
 
-        private void signupNav_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void signupNav_SelectedIndexChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (signupNav.SelectedIndex == 1)
+            if (signupNav.SelectedIndex == 0) //patient list
             {
-                MessageBox.Show("You selected Patients List");
+                /*
+                PatientList.MainWindow pList = new PatientList.MainWindow();
+                pList.Show();
+                this.Close();
+                */
             }
+            
         }
-
-
-
-
-
-
-        /*
-
-        
-
-
-        //method for checking if email address is valid
-        //needs to follow standard format (e.g. abcdefg@gmail.com). 
-        //double dots at the end are not allowed. spaces are not allowed. 
-        public static bool IsValidEmail(string email)
-        {
-            return Regex.Match(email, @"^[\w!#$%&'*+\-/=?\^_`{|}~]+(\.[\w!#$%&'*+\-/=?\^_`{|}~]+)*" + "@" + @"((([\-\w]+\.)+[a-zA-Z]{2,4})|(([0-9]{1,3}\.){3}[0-9]{1,3}))$").Success;
-        }
-
-
-        //method that checks whether or not an email address already exists in the emailSub list
-        public bool DoesEmailExist()
-        {
-            //declare duplicateEmail bool variable
-            bool duplicateEmail;
-
-            //checks if there is a duplicate in the emailSub list
-            if (duplicateEmail = Program.emailSub.Any(t => t.EmailAddr == emailAddress.Text))
-            {
-                //email exists
-                return true;
-            }
-            else
-            {
-                //email does not exist
-                return false;
-            }
-        }
-
-        //method that checks for duplicate phone numbers if they already exist in the phoneSub list
-        public bool DoesPhoneExist()
-        {
-            //declare duplicatePhone boolean
-            bool duplicatePhone;
-
-            //checks if there is a duplicate in the emailSub list
-            if (duplicatePhone = Program.phoneSub.Any(t => t.CellPhone == phoneNumber.Text))
-            {
-                //email exists
-                return true;
-            }
-            else
-            {
-                //email does not exist
-                return false;
-            }
-        }
-
-    */
-
     }
 }

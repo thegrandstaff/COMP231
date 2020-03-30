@@ -29,15 +29,72 @@
                  VerticalAlignment="Top"
                  Width="200"/>
 
-        <Label Content="Phone Number:" HorizontalAlignment="Left" Margin="51,133,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="phoneNumber_Txt" HorizontalAlignment="Left" Height="24" Margin="149,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
-        <Label Content="Street Address:" HorizontalAlignment="Left" Margin="54,162,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="streetAddress_Txt" HorizontalAlignment="Left" Height="24" Margin="149,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
-        <Label Content="Password:" HorizontalAlignment="Left" Margin="81,191,0,0" VerticalAlignment="Top"/>
-        <Label Content="Confirm Password:" HorizontalAlignment="Left" Margin="36,220,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="clear_Btn" Content="Clear" HorizontalAlignment="Left" Margin="93,265,0,0" VerticalAlignment="Top" Width="100" Height="30" Click="clear_Btn_Click"/>
-        <PasswordBox x:Name="password_box" HorizontalAlignment="Left" Margin="149,193,0,0" VerticalAlignment="Top" Width="200" Height="24" PasswordChar="*"/>
-        <PasswordBox x:Name="confirmPassword_box" HorizontalAlignment="Left" Margin="149,222,0,0" VerticalAlignment="Top" Width="200" Height="24" PasswordChar="*"/>
-        <ComboBox x:Name="signupNav" HorizontalAlignment="Left" Margin="229,10,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="signupNav_SelectionChanged"/>
+        <Label Content="Phone Number:" 
+               HorizontalAlignment="Left" 
+               Margin="51,133,0,0" 
+               VerticalAlignment="Top"/>
+        
+        <TextBox x:Name="phoneNumber_Txt" 
+                 HorizontalAlignment="Left" 
+                 Height="24" 
+                 Margin="149,135,0,0" 
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Top" 
+                 Width="200"/>
+        
+        <Label Content="Street Address:" 
+               HorizontalAlignment="Left" 
+               Margin="54,162,0,0" 
+               VerticalAlignment="Top"/>
+        
+        <TextBox x:Name="streetAddress_Txt" 
+                 HorizontalAlignment="Left" 
+                 Height="24" 
+                 Margin="149,164,0,0" 
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Top" 
+                 Width="200"/>
+        
+        <Label Content="Password:" 
+               HorizontalAlignment="Left" 
+               Margin="81,191,0,0" 
+               VerticalAlignment="Top"/>
+        
+        <Label Content="Confirm Password:" 
+               HorizontalAlignment="Left" 
+               Margin="36,220,0,0" 
+               VerticalAlignment="Top"/>
+        
+        <Button x:Name="clear_Btn" 
+                Content="Clear" 
+                HorizontalAlignment="Left" 
+                Margin="93,265,0,0" 
+                VerticalAlignment="Top" 
+                Width="100" 
+                Height="30" 
+                Click="clear_Btn_Click"/>
+        
+        <PasswordBox x:Name="password_box" 
+                     HorizontalAlignment="Left" 
+                     Margin="149,193,0,0" 
+                     VerticalAlignment="Top" 
+                     Width="200" 
+                     Height="24" 
+                     PasswordChar="*"/>
+        
+        <PasswordBox x:Name="confirmPassword_box" 
+                     HorizontalAlignment="Left" 
+                     Margin="149,222,0,0" 
+                     VerticalAlignment="Top" 
+                     Width="200" 
+                     Height="24" 
+                     PasswordChar="*"/>
+        
+        <ComboBox x:Name="signupNav" 
+                  HorizontalAlignment="Left" 
+                  Margin="229,10,0,0" 
+                  VerticalAlignment="Top" 
+                  Width="120" 
+                  SelectionChanged="signupNav_SelectedIndexChanged"/>
     </Grid>
 </Window>
