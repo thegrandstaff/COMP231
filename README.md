@@ -57,4 +57,4 @@ This is the window where prescriptions can be added to patients. An ObservableCo
 This is a window to display medication for a specific patient. Clicking patients on the datagrid can be used to open a new window. A unique ID for each patient can be used as a primary key to relate the data on the ListOfPatients with the information on the MedicationList or, for now, their phone numbers or email address.
 
 ## BookAppointment
-This is the window where a patient can book an appointment for a specific time slot that is available for the day.
+This is the window where a patient can book an appointment for a specific time slot that is available for the day. There will be an option to select a preferred doctor if they're available for a specified day.
