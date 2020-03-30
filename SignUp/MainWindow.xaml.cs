@@ -173,17 +173,9 @@ namespace SignUp
             confirmPassword_box.Clear();
         }
 
+        // automatically generated method
         private void signupNav_SelectedIndexChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (signupNav.SelectedIndex == 0) //patient list
-            {
-                /*
-                PatientList.MainWindow pList = new PatientList.MainWindow();
-                pList.Show();
-                this.Close();
-                */
-            }
-            
+        {            
         }
     }
 }
