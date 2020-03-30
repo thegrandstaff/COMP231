@@ -152,20 +152,18 @@ namespace SignUp
                 // window output - tells user that information is saved
                 MessageBox.Show("Account information saved.");
 
-                //clears all
-                firstName_Txt.Clear();
-                lastName_Txt.Clear();
-                emailAddress_Txt.Clear();
-                phoneNumber_Txt.Clear();
-                streetAddress_Txt.Clear();
-                password_box.Clear();
-                confirmPassword_box.Clear();
+                ClearAll();
             }
         }
 
         private void clear_Btn_Click(object sender, RoutedEventArgs e)
         {
-            // clears text input
+            ClearAll();
+        }
+        
+        // method that clears all input fields
+        public void ClearAll()
+        {
             firstName_Txt.Clear();
             lastName_Txt.Clear();
             emailAddress_Txt.Clear();
