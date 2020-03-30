@@ -7,6 +7,41 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Label Content="PATIENT LIST" 
+               HorizontalAlignment="Left" 
+               Margin="23,13,0,0" 
+               VerticalAlignment="Top"/>
+
+        <ComboBox x:Name="patientListNav" 
+                  HorizontalAlignment="Left" 
+                  Margin="643,17,0,0" 
+                  VerticalAlignment="Top" 
+                  Width="120"/>
+
+        <DataGrid x:Name="dg_patients" 
+                  HorizontalAlignment="Left" 
+                  Height="273" 
+                  Margin="23,70,0,0" 
+                  VerticalAlignment="Top" 
+                  Width="740"
+                  CanUserAddRows="True" 
+                  CanUserDeleteRows="True"
+                  AutoGenerateColumns="False"
+                  ItemsSource="{Binding}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="First Name" Width="*" Binding="{Binding FirstName}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Last Name" Width="*" Binding="{Binding LastName}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Address" Width="*" Binding="{Binding Address}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Phone Number" Width="*" Binding="{Binding Phone}" IsReadOnly="True"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Print" 
+                HorizontalAlignment="Left" 
+                Margin="642,365,0,0" 
+                VerticalAlignment="Top" 
+                Width="121" 
+                Height="29" 
+                Click="PrintBtn_Click"/>
+
     </Grid>
 </Window>
