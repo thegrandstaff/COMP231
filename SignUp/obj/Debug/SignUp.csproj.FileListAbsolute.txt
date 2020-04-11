@@ -34,3 +34,31 @@ C:\Users\jasah\OneDrive\Desktop\COMP 231Project\COMP231\SignUp\obj\Debug\SignUp_
 C:\Users\jasah\OneDrive\Desktop\COMP 231Project\COMP231\SignUp\obj\Debug\SignUp_MarkupCompile.lref
 C:\Users\jasah\OneDrive\Desktop\COMP 231Project\COMP231\SignUp\obj\Debug\SignUp.exe
 C:\Users\jasah\OneDrive\Desktop\COMP 231Project\COMP231\SignUp\obj\Debug\SignUp.pdb
+C:\Users\jasah\OneDrive\Desktop\COMP 231 Project\COMP231\SignUp\bin\Debug\x86\sqlite3.dll
+C:\Users\jasah\OneDrive\Desktop\COMP 231 Project\COMP231\SignUp\bin\Debug\x64\sqlite3.dll
+C:\Users\jasah\OneDrive\Desktop\COMP 231 Project\COMP231\SignUp\bin\Debug\SignUp.exe.config
+C:\Users\jasah\OneDrive\Desktop\COMP 231 Project\COMP231\SignUp\bin\Debug\SignUp.exe
+C:\Users\jasah\OneDrive\Desktop\COMP 231 Project\COMP231\SignUp\bin\Debug\SignUp.pdb
+C:\Users\jasah\OneDrive\Desktop\COMP 231 Project\COMP231\SignUp\bin\Debug\EntityFramework.dll
+C:\Users\jasah\OneDrive\Desktop\COMP 231 Project\COMP231\SignUp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jasah\OneDrive\Desktop\COMP 231 Project\COMP231\SignUp\bin\Debug\System.Data.SQLite.dll
+C:\Users\jasah\OneDrive\Desktop\COMP 231 Project\COMP231\SignUp\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\jasah\OneDrive\Desktop\COMP 231 Project\COMP231\SignUp\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\jasah\OneDrive\Desktop\COMP 231 Project\COMP231\SignUp\bin\Debug\EntityFramework.xml
+C:\Users\jasah\OneDrive\Desktop\COMP 231 Project\COMP231\SignUp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jasah\OneDrive\Desktop\COMP 231 Project\COMP231\SignUp\bin\Debug\System.Data.SQLite.xml
+C:\Users\jasah\OneDrive\Desktop\COMP 231 Project\COMP231\SignUp\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\jasah\OneDrive\Desktop\COMP 231 Project\COMP231\SignUp\obj\Debug\SignUp.csprojAssemblyReference.cache
+C:\Users\jasah\OneDrive\Desktop\COMP 231 Project\COMP231\SignUp\obj\Debug\MainWindow.g.cs
+C:\Users\jasah\OneDrive\Desktop\COMP 231 Project\COMP231\SignUp\obj\Debug\App.g.cs
+C:\Users\jasah\OneDrive\Desktop\COMP 231 Project\COMP231\SignUp\obj\Debug\SignUp_Content.g.cs
+C:\Users\jasah\OneDrive\Desktop\COMP 231 Project\COMP231\SignUp\obj\Debug\SignUp_MarkupCompile.cache
+C:\Users\jasah\OneDrive\Desktop\COMP 231 Project\COMP231\SignUp\obj\Debug\SignUp_MarkupCompile.lref
+C:\Users\jasah\OneDrive\Desktop\COMP 231 Project\COMP231\SignUp\obj\Debug\MainWindow.baml
+C:\Users\jasah\OneDrive\Desktop\COMP 231 Project\COMP231\SignUp\obj\Debug\SignUp.g.resources
+C:\Users\jasah\OneDrive\Desktop\COMP 231 Project\COMP231\SignUp\obj\Debug\SignUp.Properties.Resources.resources
+C:\Users\jasah\OneDrive\Desktop\COMP 231 Project\COMP231\SignUp\obj\Debug\SignUp.csproj.GenerateResource.cache
+C:\Users\jasah\OneDrive\Desktop\COMP 231 Project\COMP231\SignUp\obj\Debug\SignUp.csproj.CoreCompileInputs.cache
+C:\Users\jasah\OneDrive\Desktop\COMP 231 Project\COMP231\SignUp\obj\Debug\SignUp.csproj.CopyComplete
+C:\Users\jasah\OneDrive\Desktop\COMP 231 Project\COMP231\SignUp\obj\Debug\SignUp.exe
+C:\Users\jasah\OneDrive\Desktop\COMP 231 Project\COMP231\SignUp\obj\Debug\SignUp.pdb
