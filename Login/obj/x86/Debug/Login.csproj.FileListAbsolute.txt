@@ -1,0 +1,15 @@
+C:\Users\jasah\Downloads\LoginForm-master\LoginForm-master\Login\obj\x86\Debug\Registration.baml
+C:\Users\jasah\Downloads\LoginForm-master\LoginForm-master\Login\obj\x86\Debug\Registration.g.cs
+C:\Users\jasah\Downloads\LoginForm-master\LoginForm-master\Login\obj\x86\Debug\App.g.cs
+C:\Users\jasah\Downloads\LoginForm-master\LoginForm-master\Login\obj\x86\Debug\Login_MarkupCompile.cache
+C:\Users\jasah\Downloads\LoginForm-master\LoginForm-master\Login\obj\x86\Debug\Login.g.resources
+C:\Users\jasah\Downloads\LoginForm-master\LoginForm-master\Login\obj\x86\Debug\Login.csprojAssemblyReference.cache
+C:\Users\jasah\Downloads\LoginForm-master\LoginForm-master\Login\bin\Debug\Login.exe
+C:\Users\jasah\Downloads\LoginForm-master\LoginForm-master\Login\bin\Debug\Login.pdb
+C:\Users\jasah\Downloads\LoginForm-master\LoginForm-master\Login\obj\x86\Debug\Login.Properties.Resources.resources
+C:\Users\jasah\Downloads\LoginForm-master\LoginForm-master\Login\obj\x86\Debug\Login.csproj.GenerateResource.cache
+C:\Users\jasah\Downloads\LoginForm-master\LoginForm-master\Login\obj\x86\Debug\Login.csproj.CoreCompileInputs.cache
+C:\Users\jasah\Downloads\LoginForm-master\LoginForm-master\Login\obj\x86\Debug\Login.exe
+C:\Users\jasah\Downloads\LoginForm-master\LoginForm-master\Login\obj\x86\Debug\Login.pdb
+C:\Users\jasah\Downloads\LoginForm-master\LoginForm-master\Login\obj\x86\Debug\MainWindow.baml
+C:\Users\jasah\Downloads\LoginForm-master\LoginForm-master\Login\obj\x86\Debug\MainWindow.g.cs
