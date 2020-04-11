@@ -20,14 +20,15 @@
 
         <DataGrid x:Name="dg_patients" 
                   HorizontalAlignment="Left" 
-                  Height="273" 
-                  Margin="23,70,0,0" 
+                  Height="184" 
+                  Margin="110,59,0,0" 
                   VerticalAlignment="Top" 
-                  Width="740"
+                  Width="655"
                   CanUserAddRows="True" 
                   CanUserDeleteRows="True"
                   AutoGenerateColumns="False"
-                  ItemsSource="{Binding}">
+                  ItemsSource="{Binding}"
+                  CellEditEnding="dg_patients_CellEditEnding">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="First Name" Width="*" Binding="{Binding FirstName}" IsReadOnly="True"/>
                 <DataGridTextColumn Header="Last Name" Width="*" Binding="{Binding LastName}" IsReadOnly="True"/>
@@ -35,13 +36,31 @@
                 <DataGridTextColumn Header="Phone Number" Width="*" Binding="{Binding Phone}" IsReadOnly="True"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button Content="Print" 
+        <Button x:Name="print_btn" Content="Print" 
                 HorizontalAlignment="Left" 
-                Margin="642,365,0,0" 
+                Margin="527,358,0,0" 
                 VerticalAlignment="Top" 
-                Width="121" 
-                Height="29" 
-                Click="PrintBtn_Click"/>
+                Width="235" 
+                Height="30" 
+                Click="print_btn_Click"/>
+        <Label Content="ADD NEW PATIENT" HorizontalAlignment="Left" Margin="25,253,0,0" VerticalAlignment="Top"/>
+        <Label Content="First Name:" HorizontalAlignment="Left" Margin="110,283,0,0" VerticalAlignment="Top"/>
+        <Label Content="Last Name:" HorizontalAlignment="Left" Margin="110,309,0,0" VerticalAlignment="Top"/>
+        <Label Content="Address:" HorizontalAlignment="Left" Margin="110,335,0,0" VerticalAlignment="Top"/>
+        <Label Content="Phone Number:" HorizontalAlignment="Left" Margin="110,361,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="fName_txt" HorizontalAlignment="Left" Height="23" Margin="223,287,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <TextBox x:Name="lName_txt" HorizontalAlignment="Left" Height="23" Margin="223,313,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <TextBox x:Name="address_txt" HorizontalAlignment="Left" Height="23" Margin="223,339,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <TextBox x:Name="phone_txt" HorizontalAlignment="Left" Height="23" Margin="223,363,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <Button x:Name="addPatient_btn" 
+                Content= "Add Patient"
+                HorizontalAlignment="Left" 
+                Margin="527,287,0,0" 
+                VerticalAlignment="Top" 
+                Width="235" 
+                Height="30" 
+                Click="addPatient_btn_Click"/>
+        <Button x:Name="deletePatient_btn" Content="Delete Patient" HorizontalAlignment="Left" Margin="527,323,0,0" VerticalAlignment="Top" Width="235" Height="30" Click="deletePatient_btn_Click"/>
 
     </Grid>
 </Window>

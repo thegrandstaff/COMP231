@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
+using System.Text.RegularExpressions;
 
 namespace PatientList
 {
@@ -96,13 +97,33 @@ namespace PatientList
             
             //take patient list data and transfers it into the data grid as an ItemsSource
             dg_patients.ItemsSource = patientList;
-            
         }
+
+        // method to allow cell editing on datagrid
+        // in other words, allows for information to change
+        private void dg_patients_CellEditEnding(object sender, DataGridCellEditEndingEventArgs e)
+        {
+            try
+            {
+                // recreate the view
+                // System.Windows.Threading.DispatcherPriority.Background -> operations are processed after all other non-idle operations are completed
+
+                dg_patients.Dispatcher.BeginInvoke(new Action(() => dg_patients.Items.Refresh()), System.Windows.Threading.DispatcherPriority.Background);
+            }
+            catch (Exception)
+            {
+
+            }
+
+            // recreate the patient object using updated information
+            Patient updatedPatientInformation = (Patient)dg_patients.SelectedItem;
+        }
+
 
         // when the print button is pressed, a txt file is create that lists all patients saved
         // Note: The file will be located in the PatientList project file
         // PatientList -> bin -> Debug -> txt.file
-        private void PrintBtn_Click(object sender, RoutedEventArgs e)
+        private void print_btn_Click(object sender, RoutedEventArgs e)
         {
             //creates a text file called "PatientList.txt"
             StreamWriter File = new StreamWriter("PatientList.txt");
@@ -130,10 +151,81 @@ namespace PatientList
             MessageBox.Show("Patient List saved.");
         }
 
-        // automatically generated method
-        // event not currently in use, but it is used when a patient object is selected in the datagrid
+        // event not used, but it is used when a patient object is selected in the datagrid
         private void dg_patients_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+        }
+
+        private void addPatient_btn_Click(object sender, RoutedEventArgs e)
+        {
+            if (fName_txt.Text == "" || lName_txt.Text == "" ||
+                address_txt.Text == "" || phone_txt.Text == "")
+            {
+                //prompts user to enter missing information when left empty
+                MessageBox.Show("Please, enter information into the empty field(s).");
+            }
+            else if (phone_txt.Text != "" && IsValidNumber(phone_txt.Text) == false)
+            {
+                // prompts user to enter valid phone number if entered incorrectly
+                MessageBox.Show("Please, enter valid phone number.");
+            }
+            else if (fName_txt.Text != "" && lName_txt.Text != "" &&
+                    address_txt.Text != "" && phone_txt.Text != "" && IsValidNumber(phone_txt.Text) == true)
+            {
+                //if all fields are input correctly, add patient information to the patient list
+
+                //add new patient to the patient list
+                patientList.Add(new Patient
+                {
+                    FirstName = fName_txt.Text,
+                    LastName = lName_txt.Text,
+                    Address = address_txt.Text,
+                    Phone = phone_txt.Text
+                });
+
+                ClearAll();
+            }   
+        }
+
+        private void deletePatient_btn_Click(object sender, RoutedEventArgs e)
+        {
+            // create a patient object that is the selected object
+            // you will be able to specify the patient that the user will be deleting 
+            Patient itemToRemove = dg_patients.SelectedItem as Patient;
+
+            for (int i = 0; i < patientList.Count; i++)
+            {
+                // the following if statement checks if the selected patient's properties match
+                // this is to prevent patients with the same name, address and phone number to be deleted
+                if (patientList[i].FirstName.Equals(itemToRemove.FirstName) && 
+                    patientList[i].LastName.Equals(itemToRemove.LastName) &&
+                    patientList[i].Address.Equals(itemToRemove.Address) &&
+                    patientList[i].Phone.Equals(itemToRemove.Phone))
+                {
+                    // remove the specific patient in the list
+                    patientList.RemoveAt(i);
+                    
+                    // the break is meant to stop looping to halt unnecessary actions after finding the specific patient
+                    break;
+                }
+            }
+        }
+
+        // method that clears all input fields
+        public void ClearAll()
+        {
+            fName_txt.Clear();
+            lName_txt.Clear();
+            address_txt.Clear();
+            phone_txt.Clear();
+        }
+
+        //method for checking if phone number is valid 
+        // must have an area code and 7 numbers afterwards (e.g. "1-416-xxx-xxxx", "647-9007000", etc... are acceptable)
+        public static bool IsValidNumber(string number)
+        {
+            //regex expression for "phone numbers"
+            return Regex.Match(number, @"((?:\(?[2-9](?(?=1)1[02-9]|(?(?=0)0[1-9]|\d{2}))\)?\D{0,3})(?:\(?[2-9](?(?=1)1[02-9]|\d{2})\)?\D{0,3})\d{4})").Success;
         }
 
     }
