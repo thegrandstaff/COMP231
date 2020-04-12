@@ -36,13 +36,13 @@
                 <DataGridTextColumn Header="Phone Number" Width="*" Binding="{Binding Phone}" IsReadOnly="True"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button x:Name="print_btn" Content="Print" 
+        <Button x:Name="save_btn" Content="Save" 
                 HorizontalAlignment="Left" 
                 Margin="527,358,0,0" 
                 VerticalAlignment="Top" 
                 Width="235" 
                 Height="30" 
-                Click="print_btn_Click"/>
+                Click="save_btn_Click"/>
         <Label Content="ADD NEW PATIENT" HorizontalAlignment="Left" Margin="25,253,0,0" VerticalAlignment="Top"/>
         <Label Content="First Name:" HorizontalAlignment="Left" Margin="110,283,0,0" VerticalAlignment="Top"/>
         <Label Content="Last Name:" HorizontalAlignment="Left" Margin="110,309,0,0" VerticalAlignment="Top"/>

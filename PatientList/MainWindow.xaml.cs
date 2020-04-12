@@ -90,8 +90,10 @@ namespace PatientList
                 {
                     FirstName = account.FirstName, 
                     LastName = account.LastName, 
+                    Email = "",
                     Address = account.Address, 
-                    Phone = account.Phone
+                    Phone = account.Phone,
+                    Password = ""
                 });
             }
             
@@ -112,7 +114,6 @@ namespace PatientList
             }
             catch (Exception)
             {
-
             }
 
             // recreate the patient object using updated information
@@ -123,19 +124,20 @@ namespace PatientList
         // when the print button is pressed, a txt file is create that lists all patients saved
         // Note: The file will be located in the PatientList project file
         // PatientList -> bin -> Debug -> txt.file
-        private void print_btn_Click(object sender, RoutedEventArgs e)
+        private void save_btn_Click(object sender, RoutedEventArgs e)
         {
             //creates a text file called "PatientList.txt"
             StreamWriter File = new StreamWriter("PatientList.txt");
 
+            // textfile header
             File.WriteLine("PATIENT LIST");
             File.WriteLine("------------------");
             File.WriteLine(""); // extra space
 
-            //prints a line for each menu item object in the order list
+            // prints a line for each menu item object in the order list
             for (int i = 0; i < Patients.Count; i++)
             {
-                //
+                // create patient object for each patient in the textfile
                 Patient information = Patients[i];
                 File.WriteLine("Name:   " + information.LastName + ", " + information.FirstName);
                 File.WriteLine("Addr:   " + information.Address);
@@ -172,15 +174,26 @@ namespace PatientList
             else if (fName_txt.Text != "" && lName_txt.Text != "" &&
                     address_txt.Text != "" && phone_txt.Text != "" && IsValidNumber(phone_txt.Text) == true)
             {
-                //if all fields are input correctly, add patient information to the patient list
+                // if all fields are input correctly, add patient information to the patient list
 
-                //add new patient to the patient list
+                // add new patient to the patient list
                 patientList.Add(new Patient
                 {
                     FirstName = fName_txt.Text,
                     LastName = lName_txt.Text,
                     Address = address_txt.Text,
                     Phone = phone_txt.Text
+                });
+
+                // add new patient to the patient repository
+                // done for the printing of information later
+                Patients.Add(new Patient
+                {
+                    FirstName = fName_txt.Text,
+                    LastName = lName_txt.Text,
+                    Address = address_txt.Text,
+                    Phone = phone_txt.Text
+
                 });
 
                 ClearAll();
@@ -202,7 +215,8 @@ namespace PatientList
                     patientList[i].Address.Equals(itemToRemove.Address) &&
                     patientList[i].Phone.Equals(itemToRemove.Phone))
                 {
-                    // remove the specific patient in the list
+                    // remove the specific patient in both the list and patient repository
+                    Patients.RemoveAt(i);
                     patientList.RemoveAt(i);
                     
                     // the break is meant to stop looping to halt unnecessary actions after finding the specific patient
