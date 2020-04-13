@@ -1,3 +1,6 @@
+Overall Code Maintanence and Bugs Fixing - Jasah
+Basic Program Structure Implementation - Richard
+Testing - Eegh
 # COMP231
 HealthRecord
 
