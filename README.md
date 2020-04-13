@@ -54,6 +54,8 @@ Seed data is created for testing purposes to show that new Patient objects are b
 
 Since it is a datagrid, patients can be organized on the datagrid by their property (e.g. first name or last name).
 
+2.0 Addition: Allows for the addition and deletion of patients on the user interface. List of patients can be saved, by selecting "Save", as a text file (PatientList.txt) within the PatientList project folder. 
+
 ## PrescriptionMaker - Done By Jasah
 This is the window where prescriptions can be added to patients. An ObservableCollection (for patients) is used to allow different data types to be used for each object (e.g. int for dosage amounts, Date for expiration dates, etc...).
 
