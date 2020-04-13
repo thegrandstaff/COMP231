@@ -23,7 +23,7 @@ Project is created with:
 This is the login window.
 The user will be able to login. If not sign up will be shown.Fixed Bugs in the Overall Document.
 
-## SignUp
+## SignUp - Done By Richard
 This is the sign-up window for new patients.
 
 The following information is needed to create the "Patient" object:
@@ -42,7 +42,7 @@ Password needs to be at least 10 characters. A prompt to change it will appear w
 
 When all fields are correctly entered, a Patient object should be created with all the above information as properties.
 
-## PatientList
+## PatientList - Done By Richard
 This is the patient list window. It uses a datagrid to dynamically display all the patients when the repository gets updated.
 
 While each Patient object has a first name, last name, etc..., only the first name, last name, phone number and address will be displayed for each patient on the datagrid. 
@@ -57,5 +57,5 @@ This is the window where prescriptions can be added to patients. An ObservableCo
 ## MedicationList
 This is a window to display medication for a specific patient. Clicking patients on the datagrid can be used to open a new window. A unique ID for each patient can be used as a primary key to relate the data on the ListOfPatients with the information on the MedicationList or, for now, their phone numbers or email address.
 
-## BookAppointment
+## BookAppointment - Done by Eegh
 This is the window where a patient can book an appointment for a specific time slot that is available for the day. There will be an option to select a preferred doctor if they're available for a specified day.
