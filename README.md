@@ -19,8 +19,9 @@ Project is created with:
 * Visual Studio 2019
 * WPF Application (.Net Framework)
 
-## Login
+## Login - Done By Jasah
 This is the login window.
+The user will be able to login. If not sign up will be shown.Fixed Bugs in the Overall Document.
 
 ## SignUp
 This is the sign-up window for new patients.
@@ -50,7 +51,7 @@ Seed data is created for testing purposes to show that new Patient objects are b
 
 Since it is a datagrid, patients can be organized on the datagrid by their property (e.g. first name or last name).
 
-## PrescriptionMaker
+## PrescriptionMaker - Done By Jasah
 This is the window where prescriptions can be added to patients. An ObservableCollection (for patients) is used to allow different data types to be used for each object (e.g. int for dosage amounts, Date for expiration dates, etc...).
 
 ## MedicationList
