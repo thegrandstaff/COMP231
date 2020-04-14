@@ -12,3 +12,4 @@ C:\Users\Egeh\Desktop\COMP231\PrescriptionMaker\obj\Debug\PrescriptionMaker.Prop
 C:\Users\Egeh\Desktop\COMP231\PrescriptionMaker\obj\Debug\PrescriptionMaker.csproj.GenerateResource.cache
 C:\Users\Egeh\Desktop\COMP231\PrescriptionMaker\obj\Debug\PrescriptionMaker.exe
 C:\Users\Egeh\Desktop\COMP231\PrescriptionMaker\obj\Debug\PrescriptionMaker.pdb
+C:\Users\Egeh\Desktop\COMP231\PrescriptionMaker\obj\Debug\PrescriptionMaker.csproj.CoreCompileInputs.cache

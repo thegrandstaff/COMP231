@@ -12,3 +12,4 @@ C:\Users\Egeh\Desktop\COMP231\BookAppointment\obj\Debug\BookAppointment.csproj.G
 C:\Users\Egeh\Desktop\COMP231\BookAppointment\obj\Debug\BookAppointment.exe
 C:\Users\Egeh\Desktop\COMP231\BookAppointment\obj\Debug\BookAppointment.pdb
 C:\Users\Egeh\Desktop\COMP231\BookAppointment\obj\Debug\BookAppointment.csprojAssemblyReference.cache
+C:\Users\Egeh\Desktop\COMP231\BookAppointment\obj\Debug\BookAppointment.csproj.CoreCompileInputs.cache

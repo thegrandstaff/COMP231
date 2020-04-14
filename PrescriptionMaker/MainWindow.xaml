@@ -5,8 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PrescriptionMaker"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="620" Width="1000">
     <Grid>
-        
+        <StackPanel  Orientation="Horizontal" Margin="30 0 30 450">
+            <Label Content="Medicine Name" Name="medicineName_Lbl" HorizontalAlignment="Left" Margin="10 50 30 0" VerticalAlignment="Top" Width="200"/>
+            <Label Content="Dosage" Name="dosage_Lbl" HorizontalAlignment="Left" Margin="10 50 30 0" VerticalAlignment="Top" Width="120"/>
+            <Label Content="Quantity" Name="quantity_Lbl" HorizontalAlignment="Left" Margin="10 50 30 0" VerticalAlignment="Top" Width="120"/>
+            <Label Content="Prescribed Date" Name="prescribedDate_Lbl" HorizontalAlignment="Left" Margin="10 50 30 0" VerticalAlignment="Top" Width="120"/>
+            <Label Content="Expiry Date" Name="expiryDate_Lbl" HorizontalAlignment="Left" Margin="10 50 30 0" VerticalAlignment="Top" Width="120"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="30 30 30 450">
+            <TextBox Name="medicineName_Txt" HorizontalAlignment="Left" Margin="10 50 30 0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+            <TextBox Name="dosage_Txt" HorizontalAlignment="Left" Margin="10 50 30 0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox Name="quantity_Txt" HorizontalAlignment="Left" Margin="10 50 30 0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox Name="prescribedDate_Txt" HorizontalAlignment="Left" Margin="10 50 30 0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox Name="expiryDate_Txt" HorizontalAlignment="Left" Margin="10 50 30 0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="30 100 30 350">
+            <Label Name="prescribingDoctor_Lbl" Content="Prescribing Doctor" HorizontalAlignment="Left" Margin="10 50 30 0" VerticalAlignment="Top" Width="200"/>
+            <Label Name="delivery_Lbl" Content="Delivery" HorizontalAlignment="Left" Margin="10 50 30 0" VerticalAlignment="Top" Width="120"/>
+            <Label Name="pickup_Lbl" Content="Pickup" HorizontalAlignment="Left" Margin="10 50 30 0" VerticalAlignment="Top" Width="120"/>
+            <Label Name="deliveryOrPickupDate_Lbl" Content="Delivery/Pickup Date" HorizontalAlignment="Left" Margin="10 50 30 0" VerticalAlignment="Top" Width="120"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="30 130 30 350">
+            <TextBox Name="prescribingDoctor_Txt" HorizontalAlignment="Left" Margin="10 50 30 0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+            <RadioButton Name="delivery_Rdo" GroupName="medicine" HorizontalAlignment="Left" Margin="10 50 30 0" VerticalAlignment="Top" Width="120"/>
+            <RadioButton Name="pickup_Rdo" GroupName="medicine" HorizontalAlignment="Left" Margin="10 50 30 0" VerticalAlignment="Top" Width="120"/>
+            <TextBox Name="deliveryOrPickup_Txt" HorizontalAlignment="Left" Margin="10 50 30 0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        </StackPanel>
+        <Border Background="Black" Width="205" Height="205" Margin="700,320,0,0"/>
+        <InkCanvas Background="White" Width="200" Height="200" Margin="700,320,0,0"/>
     </Grid>
 </Window>
